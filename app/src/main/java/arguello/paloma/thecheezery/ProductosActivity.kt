@@ -20,7 +20,7 @@ class ProductosActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_productos)
         agregarProductos()
-        var listview: ListView=findViewById(R.id.listview) as ListView
+        var listview: ListView= findViewById<ListView>(R.id.listview)
         var adaptador: AdaptadorProductos=AdaptadorProductos(this,coldDrinks)
         listview.adapter=adaptador
     }
